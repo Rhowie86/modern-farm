@@ -4,13 +4,15 @@ export const createPlan = () => {
     const plan = []
 
     for (let index = 0; index < 3; index++) {
+        // console.log("index", index)
         const row = []
         for (let j = 0; j < 6; j++) {
             row.push(crop.next().value)
+            // console.log("row", row)
         }
         plan.push(row)
     }
-
+// console.log("test 9", plan)
     return plan
 }
 

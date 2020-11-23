@@ -1,10 +1,14 @@
 const allPlants = [];
-let thingy = ""
 
 export const addPlant = (seed) => {
     if (Array.isArray(seed)) {
-        for (const item of seed)
-        allPlants.push(item)  
+        // for (const item of seed)
+        // allPlants.push(item) 
+        // seed.forEach(seed => allPlants.push(seed)) 
+        for (let i of seed){
+            allPlants.push(i)
+        }
+        
     }
 
     else {
