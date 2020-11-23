@@ -12,7 +12,7 @@ const cornObject = [
 ]
 
 export const createCorn = () => {
-    return cornObject.slice();
+    return cornObject.slice()
 }
 
 
