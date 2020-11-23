@@ -1,11 +1,8 @@
-import { harvestPlants } from "./harvester.js"
-
-
-
 export const catalog = (plant) => {
+    // console.log("aaron made me do this",plant)
         return `
         <section>
-            <p>${plant.type}</p>
+            <p>${plant.type}" "</p>
         </section>
         `
     }

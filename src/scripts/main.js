@@ -16,8 +16,8 @@ import { harvestPlants } from "./harvester.js"
 import { catalog } from "./catalog.js"
 import { plantList } from "./plantList.js"
 
-const corn = createCorn();
-console.log("what seed is it?", corn)
+// const corn = createCorn();
+// console.log("what seed is it?", corn)
 // const soybean = createSoybean();
 // console.log("what seed is this?", soybean)
 // const asp = createAsparagus();
@@ -38,14 +38,18 @@ console.log("what seed is it?", corn)
 let plan = createPlan()
 
 plantSeeds(plan)
+
+
 // console.log("what the hell is going on?", testVar)
 let usedPlants = usePlant()
-console.log("used plants", usedPlants)
+// console.log("used plants", usedPlants)
 
 const allThePlants = harvestPlants(usedPlants)
-console.log("harvest the plants", allThePlants)
 
-// plantList()
+// let addPlants = addPlant(allThePlants)
+// console.log("harvest the plants", allThePlants)
+
+plantList()
 
 
 

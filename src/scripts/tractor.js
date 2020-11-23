@@ -14,7 +14,7 @@ export const plantSeeds = (plan) => {
         // for (let i = 0; i < plan.length; i++ ) {
         //     for (let plant of plan[i]) {
             const newPlan = plan.flat()
-// console.log("is it flat?", newPlan)
+console.log("is it flat?", newPlan)
             let seedObj;
             for (let seed of newPlan) {
                 switch(seed){
@@ -37,8 +37,9 @@ export const plantSeeds = (plan) => {
                         seedObj = (createWheat())
                     
                     
+                                        
                 }
-                
+
                 addPlant(seedObj)
             }
 

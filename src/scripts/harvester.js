@@ -5,7 +5,7 @@ import { plantSeeds } from "./tractor.js"
 
 export const harvestPlants = (allPlants) => {
     let totalPlants = []
-    
+    // console.log("testing this", allplants)
     for (const seed of allPlants){
         if (seed.type === "corn") {
             let number = seed.output * .5
