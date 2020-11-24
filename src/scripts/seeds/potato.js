@@ -1,6 +1,6 @@
 const potatoObj = 
     {
-        type: "potato",
+        type: "Potato",
         height: 32,
         output: 2
     }

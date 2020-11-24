@@ -10,7 +10,7 @@ import { createWheat } from "./seeds/wheat.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createPotato } from "./seeds/potato.js"
 import { addPlant } from "./field.js"
-import { usePlant } from "./field.js"
+import { usePlants } from "./field.js"
 import { plantSeeds } from "./tractor.js"
 import { harvestPlants } from "./harvester.js"
 import { catalog } from "./catalog.js"
@@ -31,7 +31,6 @@ import { plantList } from "./plantList.js"
 // const plantsAdd = addPlant(createCorn());
 // console.log("added a plant?", plantsAdd)
 // const usedPlants = usePlant();
-// console.log("plants used", usedPlants)
 // const plantedSeeds = plantSeeds();
 // console.log("plant seeds", plantedSeeds)
 
@@ -41,10 +40,11 @@ plantSeeds(plan)
 
 
 // console.log("what the hell is going on?", testVar)
-let usedPlants = usePlant()
+let usedPlants = usePlants()
 // console.log("used plants", usedPlants)
 
-const allThePlants = harvestPlants(usedPlants)
+const testVar = harvestPlants(usedPlants)
+console.log("harvester", testVar)
 
 // let addPlants = addPlant(allThePlants)
 // console.log("harvest the plants", allThePlants)

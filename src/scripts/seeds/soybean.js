@@ -1,6 +1,6 @@
 const soybeanObj = 
     {
-        type: "soybean",
+        type: "Soybean",
         height: 20,
         output: 4
     }

@@ -18,7 +18,7 @@ export const addPlant = (seed) => {
     }
 }
 
-export const usePlant = () => {
+export const usePlants = () => {
     return allPlants.slice();
 }
 

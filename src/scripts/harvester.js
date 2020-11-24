@@ -1,14 +1,14 @@
 import { addPlant } from "./field.js"
-import { usePlant } from "./field.js"
+import { usePlants } from "./field.js"
 import { plantSeeds } from "./tractor.js"
 
 
-export const harvestPlants = (allPlants) => {
+export const harvestPlants = (plants) => {
     let totalPlants = []
-    // console.log("testing this", allplants)
-    for (const seed of allPlants){
-        if (seed.type === "corn") {
-            let number = seed.output * .5
+
+    for (const seed of plants){
+        if (seed.type === "Corn") {
+            let number = seed.output / 2
             for (let i = 0; i < number; i++){
                 totalPlants.push(seed)
             
@@ -20,7 +20,7 @@ export const harvestPlants = (allPlants) => {
             }
         }
     }
-        // console.log("total plants", totalPlants)
+
         return totalPlants
                 
     }
