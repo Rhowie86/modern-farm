@@ -7,10 +7,11 @@ import { usePlant } from "./field.js"
 export const plantList = () => {
 
     const contentElement = document.querySelector(".container")
-    const allPlants = usePlant()
-    const plantTypes = harvestPlants(allPlants)
+    // const allPlants = usePlant()
+    let usedPlants = usePlant()
+    const plantTypes = harvestPlants(usedPlants)
 
-    console.log("total plants in PlantList.js", totalPlants)
+    console.log("total plants in PlantList.js", plantTypes)
 
     for (const plant of plantTypes){
         const plantHTML = catalog(plant)

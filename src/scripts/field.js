@@ -1,3 +1,6 @@
+
+
+
 const allPlants = [];
 
 export const addPlant = (seed) => {
@@ -9,14 +12,14 @@ export const addPlant = (seed) => {
             allPlants.push(i)
         }
         
-    }
-
-    else {
+    } else {
         allPlants.push(seed)
+        return allPlants
     }
-    return allPlants
 }
 
 export const usePlant = () => {
     return allPlants.slice();
 }
+
+console.log("testing this thing in field.js", allPlants)
