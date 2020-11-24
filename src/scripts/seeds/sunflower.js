@@ -1,6 +1,6 @@
 const sunflowerObj = 
     {
-        type: "sunflower",
+        type: "Sunflower",
         height: 380,
         output: 3
     }
