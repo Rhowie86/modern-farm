@@ -9,35 +9,36 @@ import { createPlan } from "./plan.js"
 
 export const plantSeeds = (plan) => {
     
-       
+     // these loops were before .flat and the switch. the loops would be a use case for looping over multiple arrays that are not
+     //flattened. the first loop hits the parent, and the second loops over the children.  
     // console.log("what is plan?", plan)
         // for (let i = 0; i < plan.length; i++ ) {
         //     for (let plant of plan[i]) {
             const newPlan = plan.flat()
-console.log("is it flat?", newPlan)
+// console.log("is it flat?", newPlan)
             let seedObj;
             for (let seed of newPlan) {
-                switch(seed){
-                    case 'Asparagus' :
-                        seedObj = (createAsparagus())
+                switch (seed) {
+                    case 'Asparagus':
+                        seedObj = createAsparagus()
                     break;   
-                    case 'Corn' :
-                        seedObj = (createCorn())
+                    case 'Corn':
+                        seedObj = createCorn()
                     break;    
-                    case 'Sunflower' :
-                        seedObj = (createSunflower())
+                    case 'Sunflower':
+                        seedObj = createSunflower()
                     break;    
-                    case 'Potato' :
-                        seedObj = (createPotato())
+                    case 'Potato':
+                        seedObj = createPotato()
                     break;    
-                    case 'Soybean' :
-                        seedObj = (createSoybean())
+                    case 'Soybean':
+                        seedObj = createSoybean()
                     break;    
-                    case 'Wheat' :
-                        seedObj = (createWheat())
+                    case 'Wheat':
+                        seedObj = createWheat()
                     
                     
-                                        
+                                   
                 }
 
                 addPlant(seedObj)
